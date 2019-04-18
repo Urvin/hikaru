@@ -69,15 +69,15 @@ Request /signature/widthxheight/cast/filename.extension one
 wget http://hikaru.local/07b58ae7ccbd896f85c39a5cd4eb06ec/100x150/4/test_image.jpg
 ```
 ### Cast flags
-_CAST_RESIZE_TENSILE = 2_ - stretch image directly into defined width and height ignoring aspect ratio
-_CAST_RESIZE_PRECISE = 4_ - keep aspect-ratio, use higher dimension
-_CAST_RESIZE_INVERSE = 8_ - keep aspect-ratio, use lower dimension
-_CAST_TRIM = 16_ - remove any edges that are exactly the same color as the corner pixels
-_CAST_EXTENT = 32_ - set output canvas exactly defined width and height after image resize
-_CAST_OPAGUE_BACKGROUND = 64_ - set image white opaque background
+- _CAST_RESIZE_TENSILE = 2_ - stretch image directly into defined width and height ignoring aspect ratio
+- _CAST_RESIZE_PRECISE = 4_ - keep aspect-ratio, use higher dimension
+- _CAST_RESIZE_INVERSE = 8_ - keep aspect-ratio, use lower dimension
+- _CAST_TRIM = 16_ - remove any edges that are exactly the same color as the corner pixels
+- _CAST_EXTENT = 32_ - set output canvas exactly defined width and height after image resize
+- _CAST_OPAGUE_BACKGROUND = 64_ - set image white opaque background
 
 ### Remove image
-Make a DELETE request to /remove/your_image_name. Hikaru removes both source and thumbnail files;
+Make a DELETE request to /remove/your_image_name. Hikaru removes both source and thumbnail files.
 Server responses a 200/Ok status in success.
 
 Via curl:
