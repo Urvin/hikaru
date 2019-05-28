@@ -23,6 +23,7 @@ sudo apt-get install libmagickwand-dev
 # own requirements
 sudo apt-get install luarocks
 sudo luarocks install bit32
+sudo apt-get install webp
 ```
 - Build Lua Imagick as [described][lua-imagick] in it's readme
 - Update settings src/hikaru_config.lua
