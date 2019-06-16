@@ -132,10 +132,10 @@ function thumbnail(signature, width, height, cast, name, ext)
 
         if i_width == 0 then
             resize_flag = "!";
-            i_width = image:width() * i_height / image:height();
+            i_width = math.floor(image:width() * i_height / image:height());
         elseif height == 0 then
             resize_flag = "!";
-            i_height = image:height() * i_width / image:width();
+            i_height = math.floor(image:height() * i_width / image:width());
         else
             if is_cast(i_cast, CAST_RESIZE_TENSILE) then
                 -- ignore aspect ratio
